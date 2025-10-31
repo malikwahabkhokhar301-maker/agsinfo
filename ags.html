@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ahmad Grammar &amp; Islamic School - Portfolio</title>
+  <style>
+    :root{--accent:#0b5cff;--muted:#6b7280;--card:#ffffff;--bg:#f3f4f6}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111}
+    header{background:linear-gradient(90deg,#0b5cff22,#06b6d422);padding:28px 20px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    h1{font-size:22px;margin:0}
+    p.lead{color:var(--muted);margin-top:6px}
+    nav{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--accent);background:#fff;border:1px solid #e6e9ef;font-weight:600}
+
+    main{margin-top:20px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06);margin-bottom:18px}
+
+    /* Founder section (first page) */
+    .founder{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    .founder .bio h2{margin-top:0}
+    .founder .profile{background:linear-gradient(180deg,#fff,#f9fafb);padding:16px;border-radius:12px;text-align:center}
+    .photo{width:160px;height:160px;border-radius:12px;background:#e6eefc;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .meta{font-size:14px;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+
+    /* praises */
+    .praises ul{padding-left:18px;margin:8px 0}
+
+    footer{margin-top:30px;padding:20px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:880px){
+      .founder{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+      nav{justify-content:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">AG</div>
+        <div>
+          <h1>Ahmad Grammar &amp; Islamic School</h1>
+          <p class="lead">Mithalak Deh, Sargodha — Classes: 1 to 5</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#founder">Founder</a>
+        <a href="#about">About</a>
+        <a href="#praises">Praises</a>
+        <a href="#classes">Classes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- FIRST PAGE: FOUNDER INFORMATION (visible on load) -->
+    <section id="founder" class="card founder" aria-labelledby="founder-heading">
+      <div class="bio">
+        <h2 id="founder-heading">Founder — Zafar Iqbal</h2>
+        <p class="meta">Founder of Ahmad Grammar &amp; Islamic School, Mithalak Deh, Sargodha</p>
+        <p>
+          Zafar Iqbal is the founder of Ahmad Grammar &amp; Islamic School. He holds a <strong>B.Tech</strong> degree from Preston University, Islamabad, and a <strong>B.Ed</strong> degree from the University of Education. Motivated by a strong belief in combining academic excellence with Islamic values, he established the school to provide quality primary education to the local community.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Education</h3>
+            <ul>
+              <li><strong>B.Tech</strong> — Preston University, Islamabad</li>
+              <li><strong>B.Ed</strong> — University of Education</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Vision</h3>
+            <p class="meta">To provide a safe, respectful, and academically strong environment for children of classes 1–5 where both Islamic teachings and modern subjects are valued.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile">
+        <div class="photo">ZI</div>
+        <h3>Zafar Iqbal</h3>
+        <p class="meta">Founder</p>
+        <p style="margin-top:12px;">Graduated B.Tech — Preston University, Islamabad<br>B.Ed — University of Education</p>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>About the School</h2>
+      <p>
+        Ahmad Grammar &amp; Islamic School serves students in classes 1 through 5. The school focuses on foundational literacy and numeracy, basic science, social studies, and Islamic education. Our approach balances modern teaching methods with moral and religious instruction to develop well-rounded children.
+      </p>
+    </section>
+
+    <!-- PRAISES OF TEACHERS -->
+    <section id="praises" class="card praises">
+      <h2>Praises for Our Teachers</h2>
+      <p>Our teachers are the backbone of the school — patient, dedicated, and trained to support young learners. A few highlights:</p>
+      <ul>
+        <li>Patient guidance that helps every student progress at their own pace.</li>
+        <li>Strong focus on reading, handwriting, and fundamental math skills.</li>
+        <li>Integration of Islamic morals and ethics into daily lessons.</li>
+        <li>Regular communication with parents to track student progress.</li>
+        <li>Warm classroom environment that encourages curiosity and respect.</li>
+      </ul>
+    </section>
+
+    <!-- CLASSES -->
+    <section id="classes" class="card">
+      <h2>Classes Offered (1 — 5)</h2>
+      <p>We currently offer the following classes and a sample of their curricular focus:</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Class 1</h3>
+          <p>Foundational literacy, introduction to numbers, basic Quranic recitation.</p>
+        </div>
+        <div class="card">
+          <h3>Class 2</h3>
+          <p>Building reading fluency, basic mathematics, introductory Islamiat lessons.</p>
+        </div>
+        <div class="card">
+          <h3>Class 3</h3>
+          <p>Expanded language skills, arithmetic, general knowledge.</p>
+        </div>
+        <div class="card">
+          <h3>Class 4</h3>
+          <p>More advanced numeracy and comprehension, science basics.</p>
+        </div>
+        <div class="card">
+          <h3>Class 5</h3>
+          <p>Preparation for higher primary, strengthened study habits, moral education.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2>Contact &amp; Location</h2>
+      <p>Mithalak Deh, Sargodha</p>
+      <p class="meta">For admissions, visits, or more information please contact the school administration (add phone/email here).</p>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Ahmad Grammar &amp; Islamic School — All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // Small script for interactivity
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        document.getElementById(id).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
